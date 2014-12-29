@@ -21,8 +21,8 @@ class RemoteWebDriver implements WebDriver {
   protected $touch;
 
   public function __construct(
-      $url = 'http://localhost:4444/wd/hub',
-      $desired_capabilities = array()) {
+    $url = 'http://localhost:4444/wd/hub',
+    $desired_capabilities = array()) {
     $url = preg_replace('#/+$#', '', $url);
 
     $command = array(
